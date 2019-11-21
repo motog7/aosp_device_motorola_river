@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit from river device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,12 +28,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := river
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := lineage_river
+PRODUCT_NAME := aosp_river
 PRODUCT_MODEL := moto g(7)
+
+TARGET_BOOT_ANIMATION_RES := 2280
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=river \
-        PRIVATE_BUILD_DESC="river-user 9 PPOS29.114-134-4 fe214 release-keys"
+        PRIVATE_BUILD_DESC="river-user 9 PPOS29.114-16-5-2 6e14b release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/river/river:9/PPOS29.114-134-4/fe214:user/release-keys
+BUILD_FINGERPRINT := motorola/river/river:9/PPOS29.114-16-5-2/6e14b:user/release-keys
