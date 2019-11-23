@@ -36,7 +36,29 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 
-# Vibrator Firmwares
+# Google HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
+-priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
+-priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
+
+# Firmware (Misc)
+vendor/firmware/crus_sp_rx0.bin
+vendor/firmware/crus_sp_rx1.bin
+vendor/firmware/crus_sp_rx2.bin
+vendor/firmware/crus_sp_rx3.bin
+vendor/firmware/crus_sp_rx4.bin
+vendor/firmware/crus_sp_rx5.bin
+vendor/firmware/crus_sp_rx6.bin
+vendor/firmware/crus_sp_rx7.bin
+
+# Firmware (Sound Card - Marley)
+vendor/firmware/marley-dsp1-ultrasound.bin
+vendor/firmware/marley-dsp1-ultrasound.wmfw
+vendor/firmware/marley-dsp2-aov-frontend.wmfw
+vendor/firmware/marley-dsp2-aov-vrgain.bin
+vendor/firmware/marley-dsp3-aov-control.wmfw
+
+# Firmware (Vibrator)
 vendor/firmware/aw869x_haptic.bin
 vendor/firmware/aw869x_rtp_Argo_Navis.bin
 vendor/firmware/aw869x_rtp_Attentive.bin
@@ -83,19 +105,14 @@ vendor/firmware/aw869x_rtp_Solarium.bin
 vendor/firmware/aw869x_rtp_Sparse.bin
 vendor/firmware/aw869x_rtp_Terrabytes.bin
 
-# Misc Firmware
-vendor/firmware/crus_sp_rx0.bin
-vendor/firmware/crus_sp_rx1.bin
-vendor/firmware/crus_sp_rx2.bin
-vendor/firmware/crus_sp_rx3.bin
-vendor/firmware/crus_sp_rx4.bin
-vendor/firmware/crus_sp_rx5.bin
-vendor/firmware/crus_sp_rx6.bin
-vendor/firmware/crus_sp_rx7.bin
+# Sound (ADSP+ST)
+vendor/lib/hw/sound_trigger.primary.default.so
+vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
+vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
+vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
+vendor/lib/motorola.hardware.audio.adspd@1.0.so
+vendor/lib64/vndk/libtinyalsa.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
-# Sound Card - Marley Firmware
-vendor/firmware/marley-dsp1-ultrasound.bin
-vendor/firmware/marley-dsp1-ultrasound.wmfw
-vendor/firmware/marley-dsp2-aov-frontend.wmfw
-vendor/firmware/marley-dsp2-aov-vrgain.bin
-vendor/firmware/marley-dsp3-aov-control.wmfw
